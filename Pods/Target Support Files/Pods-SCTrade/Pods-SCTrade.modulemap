@@ -1,0 +1,6 @@
+framework module Pods_SCTrade {
+  umbrella header "Pods-SCTrade-umbrella.h"
+
+  export *
+  module * { export * }
+}

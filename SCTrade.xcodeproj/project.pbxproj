@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		362E0813FF72FA2F75EBD589 /* Pods_SCTrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBBA9816E9BEEFA7A0F62A2 /* Pods_SCTrade.framework */; };
+		4D5DDDE922896BF80073C89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDDE822896BF80073C89A /* AppDelegate.swift */; };
+		4D5DDDEB22896BF80073C89A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDDEA22896BF80073C89A /* ViewController.swift */; };
+		4D5DDDEE22896BF80073C89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5DDDEC22896BF80073C89A /* Main.storyboard */; };
+		4D5DDDF122896BF80073C89A /* SCTrade.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDDEF22896BF80073C89A /* SCTrade.xcdatamodeld */; };
+		4D5DDDF322896BFC0073C89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5DDDF222896BFC0073C89A /* Assets.xcassets */; };
+		4D5DDDF622896BFC0073C89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5DDDF422896BFC0073C89A /* LaunchScreen.storyboard */; };
+		4D5DDE0122896BFC0073C89A /* SCTradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDE0022896BFC0073C89A /* SCTradeTests.swift */; };
+		4D5DDE0F22896E870073C89A /* SCParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDE0E22896E870073C89A /* SCParentViewController.swift */; };
+		4D5DDE1122896EF20073C89A /* SCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDE1022896EF20073C89A /* SCTabBarController.swift */; };
+		4D5DDE14228970450073C89A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDE13228970450073C89A /* String+Extension.swift */; };
+		4D5DDE16228970890073C89A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D5DDE15228970890073C89A /* Localizable.strings */; };
+		4D5DDE192289783F0073C89A /* SCMarketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDE182289783F0073C89A /* SCMarketsViewController.swift */; };
+		4D5DDE1C228978DD0073C89A /* SCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDE1B228978DD0073C89A /* SCColor.swift */; };
+		4D5DDE2322897BE30073C89A /* SCMarketsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDE2222897BE30073C89A /* SCMarketsTableViewCell.swift */; };
+		4D5DDE2922897FF30073C89A /* SCMarketsInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D5DDE2822897FF30073C89A /* SCMarketsInfoView.xib */; };
+		4D5DDE2B228981B90073C89A /* SCMarketsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDE2A228981B90073C89A /* SCMarketsInfoView.swift */; };
+		4D5DDE2E2289A91E0073C89A /* SCTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDE2D2289A91E0073C89A /* SCTabBarItem.swift */; };
+		4D5DDE302289ACD50073C89A /* SCTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DDE2F2289ACD50073C89A /* SCTabBarItemView.swift */; };
+		4D5DDE35228A32D20073C89A /* SCMarketsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D5DDE34228A32D20073C89A /* SCMarketsViewController.xib */; };
+		4DA22882228D289E00165528 /* SCScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA22881228D289E00165528 /* SCScreen.swift */; };
+		4DA22884228D2BB000165528 /* SCMarketsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA22883228D2BB000165528 /* SCMarketsTableViewCell.xib */; };
+		4DBABFA3228D3E2A0053935A /* SCMarketsAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBABFA2228D3E2A0053935A /* SCMarketsAPIManager.swift */; };
+		4DBABFA5228D3E790053935A /* SCAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBABFA4228D3E790053935A /* SCAPIManager.swift */; };
+		4DBABFAA228D534D0053935A /* SCCurrencyPairPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBABFA9228D534D0053935A /* SCCurrencyPairPrice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D5DDDFD22896BFC0073C89A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D5DDDDD22896BF80073C89A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D5DDDE422896BF80073C89A;
+			remoteInfo = SCTrade;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EBBA9816E9BEEFA7A0F62A2 /* Pods_SCTrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCTrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5DDDE522896BF80073C89A /* SCTrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCTrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5DDDE822896BF80073C89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D5DDDEA22896BF80073C89A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D5DDDED22896BF80073C89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D5DDDF022896BF80073C89A /* SCTrade.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SCTrade.xcdatamodel; sourceTree = "<group>"; };
+		4D5DDDF222896BFC0073C89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D5DDDF522896BFC0073C89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D5DDDF722896BFC0073C89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5DDDFC22896BFC0073C89A /* SCTradeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCTradeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5DDE0022896BFC0073C89A /* SCTradeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTradeTests.swift; sourceTree = "<group>"; };
+		4D5DDE0222896BFC0073C89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5DDE0E22896E870073C89A /* SCParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCParentViewController.swift; sourceTree = "<group>"; };
+		4D5DDE1022896EF20073C89A /* SCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBarController.swift; sourceTree = "<group>"; };
+		4D5DDE13228970450073C89A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		4D5DDE15228970890073C89A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4D5DDE182289783F0073C89A /* SCMarketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMarketsViewController.swift; sourceTree = "<group>"; };
+		4D5DDE1B228978DD0073C89A /* SCColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCColor.swift; sourceTree = "<group>"; };
+		4D5DDE2222897BE30073C89A /* SCMarketsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMarketsTableViewCell.swift; sourceTree = "<group>"; };
+		4D5DDE2822897FF30073C89A /* SCMarketsInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCMarketsInfoView.xib; sourceTree = "<group>"; };
+		4D5DDE2A228981B90073C89A /* SCMarketsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMarketsInfoView.swift; sourceTree = "<group>"; };
+		4D5DDE2D2289A91E0073C89A /* SCTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBarItem.swift; sourceTree = "<group>"; };
+		4D5DDE2F2289ACD50073C89A /* SCTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTabBarItemView.swift; sourceTree = "<group>"; };
+		4D5DDE34228A32D20073C89A /* SCMarketsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCMarketsViewController.xib; sourceTree = "<group>"; };
+		4DA22881228D289E00165528 /* SCScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCScreen.swift; sourceTree = "<group>"; };
+		4DA22883228D2BB000165528 /* SCMarketsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCMarketsTableViewCell.xib; sourceTree = "<group>"; };
+		4DBABFA2228D3E2A0053935A /* SCMarketsAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCMarketsAPIManager.swift; sourceTree = "<group>"; };
+		4DBABFA4228D3E790053935A /* SCAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAPIManager.swift; sourceTree = "<group>"; };
+		4DBABFA9228D534D0053935A /* SCCurrencyPairPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCurrencyPairPrice.swift; sourceTree = "<group>"; };
+		57DEDDC26274DAF0B820DE1F /* Pods-SCTrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCTrade.release.xcconfig"; path = "Target Support Files/Pods-SCTrade/Pods-SCTrade.release.xcconfig"; sourceTree = "<group>"; };
+		B954841772FBEF6F9B090127 /* Pods-SCTrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCTrade.debug.xcconfig"; path = "Target Support Files/Pods-SCTrade/Pods-SCTrade.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D5DDDE222896BF80073C89A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362E0813FF72FA2F75EBD589 /* Pods_SCTrade.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5DDDF922896BFC0073C89A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18974AAD4274093CB2A730FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B954841772FBEF6F9B090127 /* Pods-SCTrade.debug.xcconfig */,
+				57DEDDC26274DAF0B820DE1F /* Pods-SCTrade.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D5DDDDC22896BF80073C89A = {
+			isa = PBXGroup;
+			children = (
+				4D5DDDE722896BF80073C89A /* SCTrade */,
+				4D5DDDFF22896BFC0073C89A /* SCTradeTests */,
+				4D5DDDE622896BF80073C89A /* Products */,
+				18974AAD4274093CB2A730FF /* Pods */,
+				C5218FBB25CE7DC059C1809D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D5DDDE622896BF80073C89A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D5DDDE522896BF80073C89A /* SCTrade.app */,
+				4D5DDDFC22896BFC0073C89A /* SCTradeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D5DDDE722896BF80073C89A /* SCTrade */ = {
+			isa = PBXGroup;
+			children = (
+				4DBABFA1228D3E170053935A /* API */,
+				4D5DDE2C2289A52F0073C89A /* Base */,
+				4D5DDE1A228978CE0073C89A /* Style */,
+				4D5DDE12228970370073C89A /* Extension */,
+				4D5DDE0C22896E420073C89A /* UI */,
+				4D5DDE0B22896E380073C89A /* Model */,
+				4D5DDDE822896BF80073C89A /* AppDelegate.swift */,
+				4D5DDDEA22896BF80073C89A /* ViewController.swift */,
+				4D5DDDEC22896BF80073C89A /* Main.storyboard */,
+				4D5DDDF222896BFC0073C89A /* Assets.xcassets */,
+				4D5DDDF422896BFC0073C89A /* LaunchScreen.storyboard */,
+				4D5DDDF722896BFC0073C89A /* Info.plist */,
+				4D5DDDEF22896BF80073C89A /* SCTrade.xcdatamodeld */,
+				4D5DDE15228970890073C89A /* Localizable.strings */,
+			);
+			path = SCTrade;
+			sourceTree = "<group>";
+		};
+		4D5DDDFF22896BFC0073C89A /* SCTradeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D5DDE0022896BFC0073C89A /* SCTradeTests.swift */,
+				4D5DDE0222896BFC0073C89A /* Info.plist */,
+			);
+			path = SCTradeTests;
+			sourceTree = "<group>";
+		};
+		4D5DDE0B22896E380073C89A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DBABFA9228D534D0053935A /* SCCurrencyPairPrice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D5DDE0C22896E420073C89A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4D5DDE172289782E0073C89A /* Markets */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4D5DDE12228970370073C89A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D5DDE13228970450073C89A /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4D5DDE172289782E0073C89A /* Markets */ = {
+			isa = PBXGroup;
+			children = (
+				4D5DDE1F22897BAD0073C89A /* TableViewCell */,
+				4D5DDE1E22897BA60073C89A /* View */,
+				4D5DDE1D22897B950073C89A /* ViewController */,
+			);
+			path = Markets;
+			sourceTree = "<group>";
+		};
+		4D5DDE1A228978CE0073C89A /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				4D5DDE1B228978DD0073C89A /* SCColor.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		4D5DDE1D22897B950073C89A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D5DDE182289783F0073C89A /* SCMarketsViewController.swift */,
+				4D5DDE34228A32D20073C89A /* SCMarketsViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4D5DDE1E22897BA60073C89A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D5DDE2A228981B90073C89A /* SCMarketsInfoView.swift */,
+				4D5DDE2822897FF30073C89A /* SCMarketsInfoView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D5DDE1F22897BAD0073C89A /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D5DDE2222897BE30073C89A /* SCMarketsTableViewCell.swift */,
+				4DA22883228D2BB000165528 /* SCMarketsTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		4D5DDE2C2289A52F0073C89A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4DA22880228D288F00165528 /* Screen */,
+				4D5DDE312289AFB30073C89A /* TabBar */,
+				4D5DDE0E22896E870073C89A /* SCParentViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4D5DDE312289AFB30073C89A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4D5DDE1022896EF20073C89A /* SCTabBarController.swift */,
+				4D5DDE2D2289A91E0073C89A /* SCTabBarItem.swift */,
+				4D5DDE2F2289ACD50073C89A /* SCTabBarItemView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4DA22880228D288F00165528 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4DA22881228D289E00165528 /* SCScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		4DBABFA1228D3E170053935A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4DBABFA2228D3E2A0053935A /* SCMarketsAPIManager.swift */,
+				4DBABFA4228D3E790053935A /* SCAPIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C5218FBB25CE7DC059C1809D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EBBA9816E9BEEFA7A0F62A2 /* Pods_SCTrade.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D5DDDE422896BF80073C89A /* SCTrade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5DDE0522896BFC0073C89A /* Build configuration list for PBXNativeTarget "SCTrade" */;
+			buildPhases = (
+				56B5F86763B3F004FBAB7940 /* [CP] Check Pods Manifest.lock */,
+				4D5DDDE122896BF80073C89A /* Sources */,
+				4D5DDDE222896BF80073C89A /* Frameworks */,
+				4D5DDDE322896BF80073C89A /* Resources */,
+				6FF4C85750E96C744DEE1A78 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCTrade;
+			productName = SCTrade;
+			productReference = 4D5DDDE522896BF80073C89A /* SCTrade.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D5DDDFB22896BFC0073C89A /* SCTradeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5DDE0822896BFC0073C89A /* Build configuration list for PBXNativeTarget "SCTradeTests" */;
+			buildPhases = (
+				4D5DDDF822896BFC0073C89A /* Sources */,
+				4D5DDDF922896BFC0073C89A /* Frameworks */,
+				4D5DDDFA22896BFC0073C89A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5DDDFE22896BFC0073C89A /* PBXTargetDependency */,
+			);
+			name = SCTradeTests;
+			productName = SCTradeTests;
+			productReference = 4D5DDDFC22896BFC0073C89A /* SCTradeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D5DDDDD22896BF80073C89A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = marksiu;
+				TargetAttributes = {
+					4D5DDDE422896BF80073C89A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					4D5DDDFB22896BFC0073C89A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 4D5DDDE422896BF80073C89A;
+					};
+				};
+			};
+			buildConfigurationList = 4D5DDDE022896BF80073C89A /* Build configuration list for PBXProject "SCTrade" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D5DDDDC22896BF80073C89A;
+			productRefGroup = 4D5DDDE622896BF80073C89A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D5DDDE422896BF80073C89A /* SCTrade */,
+				4D5DDDFB22896BFC0073C89A /* SCTradeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D5DDDE322896BF80073C89A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5DDE35228A32D20073C89A /* SCMarketsViewController.xib in Resources */,
+				4D5DDDF622896BFC0073C89A /* LaunchScreen.storyboard in Resources */,
+				4D5DDE2922897FF30073C89A /* SCMarketsInfoView.xib in Resources */,
+				4D5DDE16228970890073C89A /* Localizable.strings in Resources */,
+				4DA22884228D2BB000165528 /* SCMarketsTableViewCell.xib in Resources */,
+				4D5DDDF322896BFC0073C89A /* Assets.xcassets in Resources */,
+				4D5DDDEE22896BF80073C89A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5DDDFA22896BFC0073C89A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56B5F86763B3F004FBAB7940 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCTrade-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FF4C85750E96C744DEE1A78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SCTrade/Pods-SCTrade-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SCTrade/Pods-SCTrade-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D5DDDE122896BF80073C89A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA22882228D289E00165528 /* SCScreen.swift in Sources */,
+				4D5DDDEB22896BF80073C89A /* ViewController.swift in Sources */,
+				4D5DDDF122896BF80073C89A /* SCTrade.xcdatamodeld in Sources */,
+				4D5DDE0F22896E870073C89A /* SCParentViewController.swift in Sources */,
+				4DBABFAA228D534D0053935A /* SCCurrencyPairPrice.swift in Sources */,
+				4D5DDE192289783F0073C89A /* SCMarketsViewController.swift in Sources */,
+				4D5DDDE922896BF80073C89A /* AppDelegate.swift in Sources */,
+				4DBABFA3228D3E2A0053935A /* SCMarketsAPIManager.swift in Sources */,
+				4DBABFA5228D3E790053935A /* SCAPIManager.swift in Sources */,
+				4D5DDE302289ACD50073C89A /* SCTabBarItemView.swift in Sources */,
+				4D5DDE2322897BE30073C89A /* SCMarketsTableViewCell.swift in Sources */,
+				4D5DDE14228970450073C89A /* String+Extension.swift in Sources */,
+				4D5DDE1122896EF20073C89A /* SCTabBarController.swift in Sources */,
+				4D5DDE2B228981B90073C89A /* SCMarketsInfoView.swift in Sources */,
+				4D5DDE2E2289A91E0073C89A /* SCTabBarItem.swift in Sources */,
+				4D5DDE1C228978DD0073C89A /* SCColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5DDDF822896BFC0073C89A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5DDE0122896BFC0073C89A /* SCTradeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D5DDDFE22896BFC0073C89A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D5DDDE422896BF80073C89A /* SCTrade */;
+			targetProxy = 4D5DDDFD22896BFC0073C89A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D5DDDEC22896BF80073C89A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D5DDDED22896BF80073C89A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D5DDDF422896BFC0073C89A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D5DDDF522896BFC0073C89A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D5DDE0322896BFC0073C89A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D5DDE0422896BFC0073C89A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D5DDE0622896BFC0073C89A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B954841772FBEF6F9B090127 /* Pods-SCTrade.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCTrade/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SCTrade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D5DDE0722896BFC0073C89A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57DEDDC26274DAF0B820DE1F /* Pods-SCTrade.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCTrade/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SCTrade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4D5DDE0922896BFC0073C89A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCTradeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SCTradeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCTrade.app/SCTrade";
+			};
+			name = Debug;
+		};
+		4D5DDE0A22896BFC0073C89A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCTradeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SCTradeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCTrade.app/SCTrade";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D5DDDE022896BF80073C89A /* Build configuration list for PBXProject "SCTrade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5DDE0322896BFC0073C89A /* Debug */,
+				4D5DDE0422896BFC0073C89A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5DDE0522896BFC0073C89A /* Build configuration list for PBXNativeTarget "SCTrade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5DDE0622896BFC0073C89A /* Debug */,
+				4D5DDE0722896BFC0073C89A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5DDE0822896BFC0073C89A /* Build configuration list for PBXNativeTarget "SCTradeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5DDE0922896BFC0073C89A /* Debug */,
+				4D5DDE0A22896BFC0073C89A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D5DDDEF22896BF80073C89A /* SCTrade.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D5DDDF022896BF80073C89A /* SCTrade.xcdatamodel */,
+			);
+			currentVersion = 4D5DDDF022896BF80073C89A /* SCTrade.xcdatamodel */;
+			path = SCTrade.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4D5DDDDD22896BF80073C89A /* Project object */;
+}

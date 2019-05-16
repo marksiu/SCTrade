@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  SCTrade
+
+  Created by Mark on 13/5/2019.
+  Copyright © 2019 marksiu. All rights reserved.
+*/
+
+// --------------------------------------------
+//                   Tab
+// --------------------------------------------
+"tab_markets" = "Markets";
+"tab_portfolio" = "Portfolio";
+"tab_chats" = "Chats";
+"tab_profile" = "Profile";
+
+// --------------------------------------------
+//                 Markets
+// --------------------------------------------
+"markets_title" = "Markets";
+
+"markets_equity" = "Equity";
+"markets_balance" = "Balance";
+"markets_margin" = "Margin";
+"markets_used" = "Used";
+
+
